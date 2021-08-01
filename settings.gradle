@@ -1,0 +1,2 @@
+rootProject.name = "MavenirSdkDemo"
+include ':app'

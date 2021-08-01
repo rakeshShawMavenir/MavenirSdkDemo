@@ -1,0 +1,1431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Link</string>
+    <string name="app_name_rakuten"> Rakuten Link</string>
+    <!--Constants-->
+    <string name="static_map_image_url" translatable="false">https://maps.google.com/maps/api/staticmap?center=%1$s,%2$s&amp;markers=color:red|%1$s,%2$s&amp;zoom=15&amp;size=300x300&amp;sensor=false&amp;key=%3$s</string>
+    <string name="deeplink_ecare" translatable="false">jpcorakutenmobileecare://support</string>
+    <string name="deeplink_ecare_dashboard" translatable="false">jpcorakutenmobileecare://dashboard</string>
+    <string name="rapid_games_url" translatable="false">https://api.rapid.rgames.jp/user/auth</string>
+    <string name="news_api_base_link" translatable="false">https://api.news.infoseek.co.jp/mno/topic-lists/</string>
+    <string name="game_base_url">https://app.rapid.rgames.jp/?lang=en</string>
+    <string name="games_cookie_server_url" translatable="false">.rapid.rgames.jp</string>
+    <string name="about_otp_details_url" translatable="false">https://network.mobile.rakuten.co.jp/faq/detail/00001287/</string>
+
+    <string name="user__privacy_policy_notice" tools:node="replace">By logging in, I agree to the Privacy Policy for Rakuten Group, Inc. and Rakuten Mobile, Inc. as the following link.</string>
+    <string name="user__privacy_policy_default_url" tools:node="replace">https://network.mobile.rakuten.co.jp/service/rakuten-link/terms/</string>
+
+    <!-- GCM project Id -->
+    <string name="gcm_sender_id" translatable="false">550500548800</string>
+
+    <!-- HA app id -->
+    <string name="hockey_app_id" translatable="false">9528152d8e7b4a8992619c293487c30f</string>
+    <string name="qr_app_name" translatable="false">Link</string>
+    <string name="phone_number_input_digit" translatable="false">+0123456789*#</string>
+    <string name="msisdn_digit" translatable="false">0123456789</string>
+
+    <!--Common strings-->
+    <string name="delete">Delete</string>
+    <string name="copy">Copy</string>
+    <string name="yes">Yes</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancel_caps">CANCEL</string>
+    <string name="add">Add</string>
+    <string name="update">Update</string>
+    <string name="edit">Edit</string>
+    <string name="enable">Enable</string>
+    <string name="close">Close</string>
+    <string name="info">Info</string>
+    <string name="merge">Merge</string>
+    <string name="retry">Retry</string>
+    <string name="sending">Sending…</string>
+    <string name="reply">Reply</string>
+    <string name="exit">Exit</string>
+    <string name="media">Shared Media</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="video">Video</string>
+    <string name="game_message">Message</string>
+    <string name="photo">Photo</string>
+    <string name="image">Image</string>
+    <string name="audio">Audio</string>
+    <string name="document">Document</string>
+    <string name="file">File</string>
+    <string name="contact">Contact</string>
+    <string name="more_tab">More</string>
+    <string name="location">Location</string>
+    <string name="search">Search</string>
+    <string name="admin">Admin</string>
+    <string name="not_registered">App not registered</string>
+    <string name="notifications">Notifications</string>
+    <string name="you">You</string>
+    <string name="mobile">Mobile</string>
+    <string name="warning">Warning</string>
+    <string name="alert">Alert</string>
+    <string name="continu">Continue</string>
+    <string name="submit">Submit</string>
+    <string name="remove">Remove</string>
+    <string name="edit_group_name">Edit group name</string>
+    <string name="delete_group">Delete group</string>
+    <string name="attach">Attach</string>
+    <string name="ecare_not_found">my Rakuten Mobile is not installed on this device. Would you like to open Google Play Store？</string>
+    <string name="save">Save</string>
+    <string name="sms">SMS</string>
+    <string name="seen">Seen</string>
+    <string name="permission_continu">Continue</string>
+    <string name="phone">Phone</string>
+    <string name="set">Set</string>
+    <string name="sent_failure">Sent Failure</string>
+    <string name="continue_perm">Continue</string>
+
+    <string name="delete_contact">Delete</string>
+    <!--Permission erros-->
+    <string name="no_permission_contacts">Enable contacts permission</string>
+
+    <!--Profile screen-->
+    <string name="profile_edit_update_profile_pic">Updating profile picture</string>
+    <string name="profile_edit_remove_profile_pic">Removing profile picture</string>
+    <string name="profile_edit_invalid_image">File can not be selected</string>
+    <string name="profile_discalamer">Your Rakuten Link profile name &amp; photo will be visible for other Rakuten Link users</string>
+
+    <!-- Login Screen -->
+    <string name="input_login_hint">Username or Phone Number</string>
+    <string name="input_password_hint">Password</string>
+    <string name="login">Sign in</string>
+    <string name="login_sso_failed_message">Login failed. Do you want to retry?</string>
+    <string name="welcome_title">Welcome to Rakuten Link</string>
+    <string name="login_sso_msisdn_title">Sign in with your Rakuten Mobile phone number</string>
+    <string name="login_sso_msisdn_cc_japan" translatable="false">+81</string>
+    <string name="login_sso_msisdn_hint">Enter 10 digit mobile number</string>
+    <string name="login_sso_enter_number">Enter phone number</string>
+    <string name="login_sso_msisdn_change_login_title">Exit</string>
+    <string name="login_sso_msisdn_change_login_message">Exit the app or change login</string>
+    <string name="login_sso_msisdn_change_login_change">Change login</string>
+    <string name="login_sso_msisdn_phonestate_permission_error_title">Permission denied</string>
+    <string name="login_sso_msisdn_phonestate_permission_error_message">Please provide necessary permission to use the app</string>
+    <string name="login_sso_msisdn_validating">Validating mobile number</string>
+    <string name="login_sso_msisdn_invalid">Invalid mobile number</string>
+
+    <string name="login_sso_otp_title">Validate phone number</string>
+    <string name="login_sso_otp_sent">OTP Sent to %1$s</string>
+    <string name="login_sso_otp_resend">Resend OTP</string>
+    <string name="login_sso_otp_invalid">Please enter otp</string>
+    <string name="login_sso_otp_description">(Enter the OTP if failed to detect SMS automatically)</string>
+    <string name="otp_invalid">Please Enter Correct OTP</string>
+    <string name="login_otp_incorrect">You\'ve entered incorrect OTP.</string>
+    <string name="otp_dialog_invalid_limit_title">Invalid OTP</string>
+    <string name="otp_dialog_invalid_limit_message">Wrong OTP entered, exceeded 3 attempts</string>
+
+    <!--Change backend IP-->
+    <string name="change_backend_ip_sso" translatable="false">Enable SSO</string>
+
+    <!-- Home Screen-->
+    <string name="home_screen_welcome_string">Hi %1$s</string>
+    <string name="home_screen_start_chatting">Start Messaging</string>
+    <string name="home_screen_make_calls">Make Calls</string>
+    <string name="home_screen_manage_account">Manage Account</string>
+    <string name="home_screen_offers">OFFERS FOR YOU</string>
+    <string name="home_screen_recent_chats">RECENT MESSAGES</string>
+    <string name="home_screen_all_chats">VIEW ALL</string>
+    <string name="home_screen_no_recent_chats">No recent messages</string>
+    <string name="home_screen_no_contacts">No contacts found</string>
+
+    <!--Call log screen-->
+    <string name="call_log_vm_setup_banner_title">Setup your voicemail</string>
+    <string name="call_log_vm_setup_banner_subtitle">See all your voicemails at one place</string>
+    <string name="call_log_vm_setup_ignore_dialog_description">You can set up Voicemail by tapping on the voicemail icon anytime</string>
+    <string name="call_log_vm_setup_dialog_title">Activate Voicemail</string>
+    <string name="call_log_vm_setup_dialog_description">Please activate voicemail from my Rakuten Mobile</string>
+    <string name="call_log_vm_setup_dialog_activate">Activate now</string>
+
+    <string name="settings_tac">Terms &amp; Conditions</string>
+
+
+    <string name="snackbar_network_offline_message">Network disconnected</string>
+    <string name="snackbar_network_offline_action">Settings</string>
+
+    <!--Settings-->
+    <string name="settings_title">Settings</string>
+    <string name="settings_privacy">Privacy</string>
+    <string name="settings_voicemail">Voicemail</string>
+    <string name="settings_privacy_title">Privacy Settings</string>
+    <string name="settings_voicemail_title">Voicemail Settings</string>
+
+    <!-- Offers-->
+    <string name="offer_details_text">This is a Special offer area that we can add text and imagery for consumer to click and go</string>
+    <string name="offer_title_text">SPECIAL OFFER</string>
+
+    <!-- Meetings Fragment -->
+    <string name="meetings_fragment_title">Meetings</string>
+
+    <!--newucc strings-->
+    <string name="home_tab_link">Link</string>
+    <string name="home_tab_home">Home</string>
+    <string name="home_tab_contacts">Contacts</string>
+    <string name="home_tab_contacts_with_count">Contacts (%1$d)</string>
+    <string name="general">General</string>
+    <string name="chat">Message</string>
+    <string name="chats">Messages</string>
+    <string name="calls"> All Calls</string>
+    <string name="voice_mail">Voicemails</string>
+    <string name="meetings">Meetings</string>
+    <string name="advanced">Advanced</string>
+    <string name="call_forwarding">Call Forwarding</string>
+    <string name="call_settings_item_voice_mail">Voicemail</string>
+    <string name="recordings">Recordings</string>
+    <string name="none">None</string>
+    <string name="add_number">Add number</string>
+
+    <!--left drawer strings-->
+    <string name="left_drawer_my_profile">My Account</string>
+    <string name="left_drawer_settings">Settings</string>
+    <string name="left_drawer_about">About</string>
+    <string name="left_drawer_share">Share</string>
+    <string name="left_drawer_help">Help &amp; Support</string>
+    <string name="left_drawer_sign_out">Sign out</string>
+
+    <!--time useful strings-->
+    <string name="date_pattern">MMMM dd, yyyy</string>
+    <string name="date_for_chat_in_chat_list_pattern" translatable="false">M/d</string>
+    <string name="date_for_call_logs_list_pattern">MMM dd</string>
+    <string name="today">Today</string>
+    <string name="yesterdays">%s Yesterday</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="date_format_for_contact_detail">MM/dd/yyyy</string>
+    <string name="date_format_for_chat_list">MM/dd/yy</string>
+    <string name="date_time_format_general" >HH:mm dd/MM/yy</string>
+    <string name="date_format_for_dob_without_year">MM/dd</string>
+
+    <!--nav view-->
+    <string name="nav_view_header_status_text_available">Available</string>
+    <string name="nav_view_header_status_text_unavailable">Unavailable</string>
+    <string name="service_unavailable">Service Unavailable</string>
+    <string name="title_missed">Missed</string>
+    <string name="text_missed_call">Missed call</string>
+    <string name="missed_calls">Missed Calls</string>
+    <string name="text_voice_mail">Voicemail</string>
+    <string name="title_voicemail">Voice Mail</string>
+    <string name="date_pattern_for_chat_message" translatable="false">MMM d</string>
+
+    <!--Call history popup menu-->
+    <string name="ch_option_add_contact">Add to contact</string>
+    <string name="ch_option_audio_call">Call</string>
+    <string name="ch_option_video_call">Video call</string>
+    <string name="ch_option_message">Message</string>
+    <string name="ch_option_copy">Copy</string>
+    <string name="ch_option_edit_contact">Edit contact</string>
+    <string name="ch_option_block">Block</string>
+    <string name="ch_option_delete">Delete</string>
+
+    <!--Favorite popup menu-->
+    <string name="fav_option_call">Call</string>
+    <string name="fav_option_video_call">Video call</string>
+    <string name="fav_option_message">Message</string>
+    <string name="fav_option_un_favorite">Unfavorite</string>
+
+    <!--Contact list popup menu-->
+    <string name="contact_list_option_message">Message</string>
+    <string name="contact_list_option_add_contact">Add to contact</string>
+    <string name="contact_list_option_edit_contact">Edit contact</string>
+    <string name="contact_list_option_favorite">Favorite</string>
+    <string name="contact_list_option_un_favorite">Unfavorite</string>
+    <string name="contact_list_option_block">Block</string>
+    <string name="contact_list_option_delete">Delete</string>
+
+    <!--Contact group popup menu-->
+    <string name="cg_option_rename">Rename</string>
+    <string name="cg_option_delete_group">Delete group</string>
+
+    <string name="common_msg_copied">Copied</string>
+    <string name="contact_added_to_favorite">Contact added to favorites</string>
+    <string name="contact_removed_from_favorite">Contact removed from favorites</string>
+
+    <!--Contact groups-->
+    <string name="contact_group_title_header">Contact Group</string>
+    <string name="contact_group_title">Contact Group</string>
+    <string name="contact_group_count">Contact Groups (%1$d)</string>
+    <string name="contact_group_count_empty">Create contact group</string>
+    <string name="create_contact_group">Create</string>
+    <string name="contact_group_menu_add">Add</string>
+    <string name="contact_group_menu_reorder">Reorder</string>
+    <string name="contact_group_contact_count">%1$d ppl</string>
+    <string name="contact_group_contact_count_call_tab_screen" translatable="false">(%1$d)</string>
+    <string name="contact_group_create_dialog_title">New Contact Group</string>
+    <string name="contact_group_create_dialog_hint">Group Name</string>
+    <string name="contact_group_create_dialog_progress">Creating Contact group</string>
+    <string name="contact_group_create_dialog_success">Contact group created</string>
+    <string name="contact_group_create_dialog_error_name_exists">A Group with the same name already exists, please use another name.</string>
+    <string name="contact_group_create_dialog_failure">Contact group creation failed</string>
+    <string name="contact_group_empty_title">No contact groups</string>
+    <string name="contact_group_empty_description">Tap the "+" button on right upper corner to create one!</string>
+
+    <!--Contact group details-->
+    <string name="contact_group_details_dialog_rename_title">Rename Group</string>
+    <string name="contact_group_dialog_rename_title">Edit group name</string>
+    <string name="contact_group_dialog_rename_save">SAVE</string>
+    <string name="contact_group_dialog_rename_cancel">CANCEL</string>
+    <string name="contact_group_details_dialog_rename_hint">Group name</string>
+    <string name="contact_group_details_dialog_rename_progress">Renaming group</string>
+    <string name="contact_group_details_dialog_rename_success">Group renamed</string>
+    <string name="contact_group_details_dialog_rename_exists">A Group with the same name already exists, please use another name.</string>
+    <string name="contact_group_details_dialog_rename_error">Group rename failed</string>
+    <string name="contact_group_details_contact_exists">Contact already exists in the group</string>
+
+    <string name="contact_group_details_delete_dialog_title">Delete group</string>
+    <string name="contact_group_delete_dialog_title">Delete contact group</string>
+    <string name="contact_group_details_delete_dialog_message">Are you sure you want to delete \"%1$s\" contact group?</string>
+    <string name="contact_group_delete_dialog_message">Are you sure you want to delete “%1$s“ contact group?</string>
+    <string name="contact_group_details_delete_dialog_progress">Deleting group</string>
+    <string name="contact_group_details_delete_dialog_button_positive">Delete</string>
+    <string name="contact_group_details_delete_toast_success">Group deleted</string>
+    <string name="contact_group_details_delete_toast_failed">Group deletion failed</string>
+
+    <string name="contact_group_details_add_contacts_dialog_progress">Adding contacts</string>
+    <string name="contact_group_details_add_contacts_toast_success">Contacts added</string>
+    <string name="contact_group_details_add_contacts_toast_failed">Adding contacts failed</string>
+
+    <string name="contact_group_details_remove_contacts_dialog_title">Remove contacts</string>
+    <plurals name="contact_group_details_remove_contacts_dialog_message">
+        <item quantity="one">Are you sure you want to remove contact from the group?</item>
+        <item quantity="other">Are you sure you want to remove contacts from the group?</item>
+    </plurals>
+    <string name="contact_group_details_remove_contacts_dialog_progress">Removing contacts</string>
+    <string name="contact_group_details_remove_contacts_toast_success">Contacts removed</string>
+    <string name="contact_group_details_remove_contacts_toast_failed">Removing contacts failed</string>
+
+    <!--Select contact-->
+    <string name="select_contact_title_add_contact">Select contact</string>
+    <string name="select_contact_subtitle">%1$d selected</string>
+
+    <!--chat strings-->
+    <string name="presence_online">Active</string>
+    <string name="presence_last_seen">Last seen %1$s</string>
+    <string name="presence_offline">Offline</string>
+    <string name="begining_chat_history">This is the beginning of your message history with %s</string>
+    <string name="chat_input_hint">Type a message</string>
+    <string name="no_conversations">No Conversations</string>
+    <string name="no_recent_calls">No recent calls found</string>
+    <string name="no_voicemails">No Voicemails yet</string>
+    <string name="no_missed_calls">No Missed Calls</string>
+    <string name="new_chat">New Message</string>
+    <string name="new_call">New Call</string>
+    <string name="recents">Recents</string>
+    <string name="input_add_chat_hint">Enter Name or Number</string>
+    <string name="self_chat">Message with self</string>
+    <string name="employee_stub">Employee</string>
+    <string name="no_missed_calls_description">Missed calls will appear here</string>
+    <string name="no_recent_calls_description">Make or receive a new call and it will appear here</string>
+    <string name="chat_user_block_description">You can\'t send messages to this group because you\'re no longer a participant.</string>
+    <string name="chat_attachment_image_chooser_title">Choose app to select images</string>
+    <string-array name="chat_attachment_gallery">
+        <item>Select Image</item>
+        <item>Select Video</item>
+    </string-array>
+    <string name="chat_menu_item_create_group">Create group</string>
+    <string name="chat_menu_item_call_audio">Call</string>
+    <string name="chat_menu_item_clear">Clear conversation</string>
+    <string name="chat_menu_item_media">View media</string>
+    <string name="chat_menu_item_mute">Mute notification</string>
+    <string name="chat_menu_item_unmute">Unmute notification</string>
+    <string name="chat_menu_item_pin">Pin to top</string>
+    <string name="chat_menu_item_unpin">Unpin</string>
+
+    <string name="chat_toast_muted">Message Room Muted</string>
+    <string name="chat_toast_unmuted">Message Room Unmuted</string>
+    <string name="chat_toast_pinned">Message Room Pinned</string>
+    <string name="chat_toast_unpinned">Message Room Unpinned</string>
+    <string name="chat_toast_pin_limit_exceeded">You can only pin up to 5 message rooms</string>
+
+    <string name="chat_ft_camera_image">Capture Image</string>
+    <string name="chat_ft_camera_video">Capture Video</string>
+    <string name="chat_ft_toast_file_size_exceeded">Select a file with size less than 60MB</string>
+    <string name="chat_ft_toast_file_size_exceeded_video">Select a video with size less than 50MB</string>
+    <string name="chat_ft_toast_file_size_exceeded_multiple">Some files are not selected due to file size limit</string>
+    <string name="chat_ft_toast_file_size_exceeded_multiple_or_invalid">Some files are not selected due to file size limit or invalid file format</string>
+    <string name="chat_ft_toast_mime_type_empty">Invalid file type</string>
+    <string name="chat_ft_toast_file_not_exists">File not available</string>
+    <string name="chat_ft_toast_file_not_downloaded">File not downloaded</string>
+    <string name="chat_ft_toast_image_not_exists">Image file not available</string>
+    <string name="chat_ft_toast_video_not_exists">Video file not available</string>
+    <string name="chat_ft_file_deleted">This file has been deleted</string>
+    <string name="chat_ft_vcard_multiple">%1$s and %2$d other(s)</string>
+    <string name="chat_ft_long_message_warning">This message could not be sent since it is too long. Would you like to send this as a file?</string>
+    <string name="chat_ft_unknown_file_type">File type not supported </string>
+    <string name="chat_ft_audio_can_not_play">Can not play audio file</string>
+    <string name="chat_location_send_current_loc">Send current location</string>
+    <string name="chat_location_send_selected_loc">Send Selected location</string>
+    <string name="location_not_enable_title">Location not enabled</string>
+    <string name="chat_location_dialog_enable_gps_message">Please Enable your location in order to share your current location</string>
+    <string name="chat_location_no_permission">Location permission not granted</string>
+    <string name="chat_location_locating">Locating user</string>
+    <string name="chat_location_locate_failed">Could\'nt find location</string>
+
+    <string name="chat_forward_error_ft_non_rcs">Sending media is not available for non link users</string>
+    <string name="chat_forward_error_not_a_member">You\'re no longer a participant in this group</string>
+    <string name="chat_forward_error_exceed_max_limit">You can only share with up to %1$d message rooms</string>
+    <string name="chat_forward_error_messages_max_limit">Can\'t forward more than %1$d messages</string>
+    <string name="forwarding">Forwarding&#8230;</string>
+    <string name="sharing">Sharing&#8230;</string>
+    <string name="dialog_mute_chat_notification">Are you sure you want to mute notifications from "%1$s"? </string>
+    <string name="dialog_group_chat_mute_notification">Are you sure you want to mute notifications from "%1$s"?</string>
+
+    <string name="chat_message_not_available">Message unavailable</string>
+    <string name="chat_quote_contact_title">Shared a contact</string>
+    <string name="chat_message_state_sending">Message is in sending state</string>
+    <string name="chat_message_selected_delete">%1$d selected</string>
+    <string name="chat_message_selected_forward">%1$d/10 selected</string>
+
+    <!--Group Info-->
+    <string name="group_info">Group info</string>
+    <string name="group_info_medias">View all (%1$d)</string>
+    <string name="group_info_participants">%1$s Participants</string>
+    <string name="group_info_add_remove_restriction">Only the administrator can add or remove participants</string>
+    <string name="group_add_participants">Add participants</string>
+    <string name="group_cover_photo_title">Add a custom cover photograph</string>
+    <string name="group_info_dialog_change_subject">Enter a title for your group</string>
+    <string name="group_info_dialog_subject_hint">Group subject</string>
+    <string name="group_info_dialog_change_subject_processing">Changing the subject</string>
+    <string name="group_info_dialog_change_subject_success">Group name updated successfully</string>
+    <string name="group_info_dialog_change_subject_failure">Group name update failed</string>
+    <string name="group_info_dialog_change_picture_processing">Changing group picture..</string>
+    <string name="group_info_dialog_change_picture_success">Changing group picture success</string>
+    <string name="group_info_dialog_change_picture_failure">Changing group picture failed</string>
+    <string name="group_info_dialog_add_participant_processing">Adding participant(s)..</string>
+    <string name="group_info_dialog_add_participant_success">Added participant(s) to the group</string>
+    <string name="group_participants_added_success">%1$s Added to the group</string>
+    <string name="group_info_dialog_add_participant_failure">Failed adding participant(s)</string>
+    <string name="group_info_dialog_remove_participant_processing">Removing participant(s)..</string>
+    <string name="group_info_dialog_granting_admin_access">Granting Admin access</string>
+    <string name="group_info_dialog_revoking_admin_access">Revoking Admin access</string>
+    <string name="group_info_dialog_remove_participant_success">Removing participant(s) from the group</string>
+    <string name="group_info_dialog_remove_participant_failure">Failed removing participant(s)</string>
+    <string name="group_info_dialog_remove_participant">Remove %1$s from %2$s</string>
+    <string name="group_info_remove_participant">Remove participant</string>
+    <string name="group_info_participant_options_view">View %1$s</string>
+    <string name="group_info_participant_options_message">Message %1$s</string>
+    <string name="group_info_participant_options_call">Call %1$s</string>
+    <string name="group_info_participant_options_make_admin">Make Group Admin</string>
+    <string name="group_info_participant_options_dismiss_as_admin">Dismiss as admin</string>
+    <string name="group_info_participant_options_remove">Remove %1$s</string>
+    <string name="group_info_participant_options_send_message">Send Message to %1$s</string>
+    <string name="select_recipients">Select Recipients</string>
+    <string name="create_new_group">Create new group</string>
+    <string name="new_contact">New Contact</string>
+
+    <!--Message Info-->
+    <string name="message_info_read_header">Read by</string>
+    <string name="message_info_delivered_header">Delivered to</string>
+
+    <!--ChatMediaActivity-->
+    <string name="chat_media_tab_media">Media</string>
+    <string name="chat_media_tab_docs">Documents</string>
+    <string name="chat_media_tab_links">Links</string>
+    <string name="chat_media_tab_header_recent">Recent</string>
+    <string name="chat_media_tab_header_month_and_year" translatable="false">%1$s %2$s</string>
+
+    <!--call settings-->
+    <string name="call_settings">Call settings</string>
+
+    <!--voicemail settings-->
+    <string name="voicemail_settings_greeting">Voicemail greeting</string>
+    <string name="voicemail_settings_greeting_default">Default</string>
+    <string name="voicemail_settings_greeting_custom">Custom</string>
+    <string name="voicemail_settings_get_via_email">Get voicemail via email</string>
+    <string name="voicemail_configuration_instructions">Set your voicemail greeting</string>
+    <string name="no_voicemails_description">Receive a voicemail and it will appear here</string>
+    <string name="voicemail_configuration_is_needed_description">&lt;font color="#%1$s"&gt;Setup your inbox&lt;/font&gt; &lt;font color="#%2$s"&gt;to receive voicemails&lt;/font&gt;</string>
+
+    <!-- detailed contact screen -->
+    <string name="phone_no" translatable="false">Phone</string>
+    <string name="email_id" translatable="false">Email</string>
+    <string name="extension" translatable="false">Extension</string>
+    <string name="unknon_data" translatable="false">Unknown data</string>
+    <string name="contact_detail_title">Contact Detail</string>
+
+    <!--dialer strings-->
+    <string name="dialer_1">1</string>
+    <string name="dialer_2">2</string>
+    <string name="dialer_3">3</string>
+    <string name="dialer_4">4</string>
+    <string name="dialer_5">5</string>
+    <string name="dialer_6">6</string>
+    <string name="dialer_7">7</string>
+    <string name="dialer_8">8</string>
+    <string name="dialer_9">9</string>
+    <string name="dialer_0">0</string>
+    <string name="dialer_star">*</string>
+    <string name="dialer_sharp">#</string>
+    <string name="dialer_abc">abc</string>
+    <string name="dialer_def">def</string>
+    <string name="dialer_ghi">ghi</string>
+    <string name="dialer_jkl">jkl</string>
+    <string name="dialer_mno">mno</string>
+    <string name="dialer_pqrs">pqrs</string>
+    <string name="dialer_tuv">tuv</string>
+    <string name="dialer_wxyz">wxyz</string>
+    <string name="dialer_plus" translatable="false">+</string>
+    <string name="calling">Incoming Call…</string>
+    <string name="audio_calling">Incoming Audio Call</string>
+    <string name="outgoing_video_call">Outgoing Video Call</string>
+    <string name="hangup">Hang Up</string>
+    <string name="mute">Mute</string>
+    <string name="call_mute">Call Muted</string>
+    <string name="unmute">Unmute</string>
+    <string name="speaker">Speaker</string>
+    <string name="keypad">Keypad</string>
+    <string name="ongoing_call">Call in progress</string>
+    <string name="incoming_call">Incoming call</string>
+    <string name="incoming_video_call">Incoming Video call</string>
+    <string name="call_answer">Answer</string>
+    <string name="incoming_call_audio_answer">Answer with Audio</string>
+    <string name="incoming_call_end_answer">End &amp; Answer</string>
+    <string name="incoming_call_hold_answer">Hold &amp; Answer</string>
+    <string name="call_decline">Decline Call</string>
+    <string name="call_reject">Reject</string>
+    <string name="incoming_call_silence">Silence</string>
+    <string name="incoming_call_message">Message</string>
+    <string name="ringing_call">Ringing&#8230;</string>
+    <!--<string name="call_notification_id">call_notification</string>-->
+    <string name="call_channel_id">Call</string>
+    <!--<string name="call_notification_channel_name">Call Notification</string>-->
+    <!--<string name="message_notification_channel_name">Message Notification</string>-->
+    <!--<string name="message_notification_id" translatable="false">message_notification</string>-->
+    <string name="call_notification_channel_description">UCC Call Notification</string>
+    <!-- <string name="message_notification_channel_description">UCC Message Notification</string>-->
+    <string name="login_failed">Failed to login. Please check password or network availability.</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="place_secondCall_From_Dialer">Already one call is running, please use AddCall button to place another call</string>
+    <string name="str_incoming_call_msg">Incoming call</string>
+
+    <!-- ImageView Content description-->
+    <string name="chat_item_unread_indicator">Message Item Unread Indicator</string>
+    <string name="chat_item_user_avatar">Message Item User Avatar</string>
+    <string name="chat_item_user_availability_indicator">Message Item User Availability Indicator</string>
+    <string name="chat_view_back_button">Message View Back Button</string>
+    <string name="chat_list_empty_list_circle">Message List Empty List Circle</string>
+    <string name="chat_list_empty_icon">Message List Empty Icon</string>
+    <string name="chat_partner_name_stub">Partner</string>
+    <string name="detailed_contact_view_back_button">Detailed Contact View Back Button</string>
+    <string name="detailed_contact_view_user_avatar">Detailed Contact View User Avatar</string>
+    <string name="detailed_contact_view_user_status_indicator">Detailed Contact View User Status Indicator</string>
+    <string name="bottom_drop_up_contact_menu_call_button">Call Button</string>
+    <string name="bottom_drop_up_contact_menu_chat_button">Message Button</string>
+    <string name="bottom_drop_up_contact_menu_contact_details_button">Details Button</string>
+    <string name="chat_with_selfid_not_valid">Message with self id not allowed !</string>
+
+    <!--Calls-->
+    <string name="calls_dialog_upgrade_call_title">Upgrade</string>
+    <string name="calls_dialog_upgrade_call_message">Upgrade to video call?</string>
+    <string name="login_for_call">Please login into connect app to use this feature</string>
+
+    <!-- IntentUtils -->
+    <string name="no_such_app">No Such Application</string>
+    <string name="connecting">CONNECTING…</string>
+    <string name="intent_share_app_title">Share GlobalMeet UC</string>
+    <string name="intent_share_app_subject">Check out GlobalMeet UC</string>
+    <string name="intent_share_app_content">I am using GlobalMeet UC as my unified communications app
+        and I think you\'d find it useful for messaging, calling and meeting.
+        Check it out - http://play.google.com/store/apps/details?id=%1$s</string>
+
+    <string name="opening_chat_failed">Unfortunately, opening message room failed</string>
+    <string name="call_list_item_delete_button_text">Delete</string>
+    <string name="swap_text">Swap Call</string>
+    <string name="on_hold">On hold</string>
+    <string name="audio_on_hold">Call On hold</string>
+    <string name="video_on_hold">Video Call On hold</string>
+    <string name="signing_out">Signing out</string>
+    <string name="no_contacts">No contacts</string>
+    <string name="no_contacts_selected">No contacts selected.</string>
+    <string name="change_backend_ip">Change backend ip</string>
+    <string name="cannot_start_chat_with_self">Cannot send message to self</string>
+    <string name="phone_number_validation">Please type valid phone number</string>
+    <string name="cannot_start_chat_with_number">Cannot send message to number</string>
+    <string name="cannot_start_call_with_self">Cannot start call with self</string>
+    <string name="copied_to_clipboard_message">Copied to clipboard</string>
+    <string name="dialog_delete_chat_title_text">Delete this conversation?</string>
+    <string name="dialog_delete_chat_description">Are you sure you want to delete this conversation?</string>
+    <string name="dialog_delete_chat_description_group">Exit and Delete %s Group?</string>
+    <string name="dialog_clear_chat_description">Are you sure you want to clear all messages and shared content between you and "%1$s"?</string>
+    <string name="dialog_clear_chat_description_group">Are you sure you want to clear all messages and shared content between you and "%1$s"?</string>
+    <string name="dialog_delete_call_title_text">Delete Selected Calls?</string>
+    <string name="dialog_delete_contact_title_text">Delete selected contacts?</string>
+    <string name="delete_contact_title_text">Delete Contacts</string>
+    <string name="delete_contact_success">Contacts have been deleted</string>
+    <string name="delete_contact_progress">Deleting contacts…</string>
+    <string name="dialog_delete_contact_description_if_is_in_native">Selected contacts will be deleted from Rakuten Link and device’s address book.</string>
+    <string name="dialog_delete_contact_description_if_not_in_native">Selected contacts will be deleted from Rakuten Link.</string>
+    <string name="dialog_delete_call_description">Are you sure you want to delete selected calls?</string>
+    <string name="dialog_delete_voicemail_title_text">Delete Selected</string>
+    <string name="dialog_delete_voicemail_description">Are you sure you want to delete selected voicemails?</string>
+    <string name="dialog_delete_voicemail_description_single">Are you sure you want to delete this voicemail?</string>
+    <string name="contacts">Contacts</string>
+    <string name="allow_access_android">&#60;font color=#00aeef>Allow access&#60;/font> &#60;font color=#656565> to your Android contacts and they will appear here&#60;/font></string>
+    <string name="no_conversations_description">All your messages and SMS will appear here</string>
+    <string name="chat_list_no_conversations_description">Send new message from bottom right icon!</string>
+    <string name="contact_synchronize_your_address_book">Synchronize your address book</string>
+    <string name="contact_synchronize_your_address_book_description">Synchronize your devices address book to Rakuten Link</string>
+    <string name="dialog_allow_access_to_contacts_from_device_settings">Allow access to contacts from the device settings.</string>
+    <string name="button_set">SET</string>
+    <string name="button_not_now">NOT NOW</string>
+    <string name="message_copied">Message copied</string>
+
+    <string name="voice_mail_configuration_phone_number" translatable="false">+14706017002</string>
+    <string name="voice_mail_record_button_text">RECORD</string>
+    <string name="voice_mail_stop_button_text">STOP</string>
+    <string name="voice_mail_save_button_text">SAVE</string>
+
+    <string name="support_phone_number" translatable="false">18775693239</string>
+
+    <string name="about">About</string>
+    <string name="app_version_title">Version</string>
+    <string name="term_of_service">Terms &amp; Conditions and Privacy Policy</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="software_credits">Software Credits</string>
+    <string name="terms_condition_url_2" translatable="false">https://network.mobile.rakuten.co.jp/terms/pdf/rakuten_link.pdf</string>
+    <string name="terms_condition_pdf_url" translatable="false">http://docs.google.com/viewer?url=https://network.mobile.rakuten.co.jp/terms/pdf/rakuten_link.pdf</string>
+    <string name="terms_of_service_url" translatable="false"><a href="https://network.mobile.rakuten.co.jp/terms/pdf/rakuten_link.pdf">Terms &amp; Conditions</a></string>
+    <string name="privacy_policy_url"><a href="https://corp.mobile.rakuten.co.jp/privacy/rakuten-link-app/">Privacy Policy</a></string>
+    <string name="wrong_content">Wrong Content</string>
+
+    <string name="sign_up_page_url" translatable="false">https://network.mobile.rakuten.co.jp/fee/un-limit/link-app/</string>
+    <string name="logging_out">Logging out</string>
+
+    <string name="support">Support</string>
+    <string name="support_text">To assist with your support call, here is your information.</string>
+    <string name="my_email">My email</string>
+    <string name="my_phone">My phone</string>
+    <string name="my_extension">My extension</string>
+    <string name="to">To:</string>
+    <string name="global_meet_support_email" translatable="false">support@GlobalMeet.com</string>
+    <string name="from">From</string>
+    <string name="subject">Subject</string>
+    <string name="meet_uc_feedback">GlobalMeet UC Feedback</string>
+    <string name="Message">Message&#8230;</string>
+    <string name="my_info">My Info:</string>
+    <string name="call_message_anyone_with_ease">Call and message anyone with ease</string>
+    <string name="home_in_one_place">Home: Everything in one place</string>
+    <string name="visual_voicemail_text">Visual\nvoicemail</string>
+    <string name="back">Back</string>
+    <string name="done">Done</string>
+    <string name="next">Next</string>
+    <string name="device_info">Device info</string>
+    <string name="user_info">User info</string>
+    <string name="to_label">To:</string>
+
+    <!--Contact-->
+    <string name="contact_dialog_delete_title">Delete contact?</string>
+    <string name="contact_dialog_delete_message_if_is_in_native">This contact will be deleted from Rakuten Link and device’s address book.</string>
+    <string name="contact_dialog_delete_message_if_not_in_native">This contact will be deleted from Rakuten Link.</string>
+
+    <!--Contact options-->
+    <string name="contact_options_call_audio">Call</string>
+    <string name="contact_options_call_video">Video call</string>
+    <string name="contact_options_chat">Message</string>
+    <string name="contact_options_open_contact">View contact</string>
+
+    <!--Add Contact-->
+    <string name="add_contact_fetching_profile">Fetching profile</string>
+
+    <!-- Common -->
+    <string name="app_version">Application version  </string>
+    <string name="logout_failed">Logout failed</string>
+    <string name="app_api_timeout_message">Unable to connect to the server. Please try after a while.</string>
+
+    <!--Favorite-->
+    <string name="contact_favorite_title_header">Favorite</string>
+    <string name="no_favourite_contacts_description">Touch and hold the contact in \"Contacts\" and add to favorite!</string>
+    <string name="no_favourite_contacts">No favorite contacts</string>
+
+    <!--Notification-->
+    <string name="notification_message_summary">%1$d Unread messages</string>
+    <string name="selected_items_summary">%1$d Selected</string>
+    <string name="delete_multiple_calls_title">%1$d Calls will be deleted</string>
+    <string name="delete_multiple_chats_title">%1$d Message rooms will be deleted</string>
+    <string name="delete_multiple_chats_title_with_group">%1$d Message rooms will be deleted, Once you deleted the group message you will not receive any message on that group</string>
+    <string name="delete_multiple_messages_title">%1$d Messages will be deleted</string>
+    <string name="notification_call">Call notification</string>
+    <string name="notification_incoming_call">Incoming Call notification</string>
+    <string name="notification_missed_call">Missed Call notification</string>
+    <string name="notification_sim_swap">SIM swap notification</string>
+    <string name="notification_message_heads_up">Heads up message notification</string>
+    <string name="notification_message_default">Default message notification</string>
+
+    <string name="voicemail_save_message">Voicemail media is%1$s saved.</string>
+
+    <string name="dialog_default_greeting_title_text">Set default Greeting?</string>
+    <string name="dialog_default_greeting_description">This action can\'t be undone. Are you sure you want to set the default greeting?</string>
+    <string name="dialog_default_greeting_set">Confirm</string>
+    <string name="sim_not_available">SIM is not available</string>
+    <string name="native_call_in_progress">Native call is in progress</string>
+    <string name="simple_error_text">ERROR</string>
+    <string name="voicemail_dialog_check_for_vm_profile">Checking for VM Profile</string>
+    <string name="voicemail_not_exist">Voice Mail no longer exists</string>
+    <string name="title_all">ALL</string>
+    <string name="title_all_callog">All</string>
+    <string name="outgoing_call">Outgoing Call</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_outgoing_call">Outgoing Call</string>
+    <string name="connected_with_timer_video_call">(%1$s) Connected %2$s</string>
+
+    <string name="no_contacts_available">No contacts Available</string>
+    <!--Search strings-->
+    <string name="outgoing_calling">Calling…</string>
+    <string name="reconnecting">Reconnecting...</string>
+    <string name="user_busy">User busy…</string>
+    <string name="search_contacts">Search Contacts</string>
+    <string name="home_contact_search">Search name or number</string>
+    <string name="start_new_call">Start a new Call</string>
+    <string name="search_messages">Search Messages</string>
+    <string name="search_calls">Search Calls</string>
+    <string name="search_chat_contact">Search message or contact</string>
+
+    <string name="active_call_mute">Mute</string>
+    <string name="active_call_speaker">Speaker</string>
+    <string name="active_call_keypad">Keypad</string>
+    <string name="active_camera_flip">Rotate</string>
+    <string name="active_call_add">Add</string>
+    <string name="active_call_video">Video</string>
+    <string name="active_call_merge">Merge</string>
+    <string name="conference_call">Conference Call</string>
+    <string name="manage_conference_call">Manage Conference Call</string>
+
+    <string name="no_application_found">No Application found to handle this action.</string>
+    <string name="onhold_call_with_timer">OnHold call %1$s</string>
+    <string name="call_with_duration">Call Duration %1$s</string>
+    <string name="hours_ago">%1$d hours ago</string>
+    <string name="minutes_ago">%1$d minutes ago</string>
+    <string name="seconds_ago">%1$d seconds ago</string>
+    <string name="voice_mail_deleted_successfully">Voice Mail has been deleted successfully</string>
+    <string name="voice_mails_deleted_successfully">Voice Mails have been deleted successfully</string>
+    <string name="unable_to_delete_voice_mail">Unable to delete Voice Mail</string>
+    <string name="unable_to_delete_voice_mails">Unable to delete Voice Mails</string>
+    <string name="unable_to_start_call">Unable to start call</string>
+    <string name="clear">Clear</string>
+    <string name="search_people_and_places">Search People and Places</string>
+    <string name="login_terms_and_condition"><![CDATA[By signing in, I agree to the Terms & Services and consent to the processing of my data as described in the Privacy Policy]]></string>
+    <string name="login_tnc"><font color='#a6000000'>By signing in, I agree to the </font><font color='#bf0000'>Terms &amp; Services </font>and consent to the processing of my data as described in the <font color='#bf0000'>Privacy Policy</font></string>
+    <string name="call_logs">Call Logs</string>
+    <string name="invite_contact">INVITE</string>
+    <string name="typing">Typing&#8230;</string>
+    <string name="typing_group">%s is Typing&#8230;</string>
+
+    <!--File size-->
+    <string name="kb">%1$s KB</string>
+    <string name="mb">%1$s MB</string>
+    <string name="label_welcome_to">Welcome to</string>
+    <string name="logout">Logout</string>
+    <string name="skip">Skip</string>
+
+
+    <!--Group Compose-->
+    <string name="group_compose_participant">Participant</string>
+    <string name="group_compose_participants">Participants</string>
+    <string name="group_compose_selected">Selected</string>
+    <string name="group_compose_group_name">Group Name</string>
+    <string name="group_compose_group_name_hint">Enter Group Name</string>
+    <string name="group_edit_participants">Participants (%1$d)</string>
+
+    <!--Feedback Form-->
+    <string name="feed_voice_call">Voice call</string>
+    <string name="feed_video_call">Video call</string>
+    <string name="feed_others">Others</string>
+    <string name="form_feedback_text">Tell us what didn’t work well?</string>
+    <string name="failed_call">Unable to make a call</string>
+    <string name="call_drop">Call dropped</string>
+    <string name="poor_call">Poor audio</string>
+    <string name="no_call">No audio</string>
+    <string name="share_your_experience">Share your experience with us <font color='#FF4747'>(Required)</font></string>
+    <string name="additional_comments_optional">Additional comments <font color='#232361'>(Optional)</font></string>
+    <string name="video_failed_call">Unable to make video call</string>
+    <string name="video_call_drop">Video call dropped</string>
+    <string name="video_poor_call">Poor audio in video call</string>
+    <string name="video_no_call">No audio in video call</string>
+    <string name="no_video_call">No video / video stopped</string>
+    <string name="no_switch_video_call">Unable to switch voice ↔ video</string>
+    <string name="dont_show">Don\'t show again</string>
+    <string name="feed_voice_mails">Voicemail</string>
+    <string name="feed_contacts">Address book</string>
+    <string name="unable_receive_chats">Unable to receive messages</string>
+    <string name="unable_send_chats">Unable to send messages</string>
+    <string name="unable_manage_chats">Unable to manage messages</string>
+    <string name="unable_manage_group_chats">Unable to manage group messages</string>
+    <string name="unable_share_location">Unable to share locations</string>
+    <string name="unable_share_contact">Unable to share contacts</string>
+    <string name="unable_share_file">Unable to share files</string>
+    <string name="unable_play_voicemail">Unable to play a voicemail</string>
+    <string name="unable_manage_voicemail">Unable to manage voicemails</string>
+    <string name="curl_contacts">Unable to add/edit/remove contacts</string>
+    <string name="contact_details">Contact details do not display well</string>
+    <string name="unable_use_qr_code">Unable to use QR Code</string>
+    <string name="description_too_long">Maximum character limit reached</string>
+    <string name="feedback_input_char_limit">Upto 300 Characters</string>
+    <string name="specifics_cannot_empty">Specifics cannot be empty</string>
+    <string name="feed_desc">Share your experience with us (Required)</string>
+    <string name="feed_editor_input_hint_casual">Please write the detail</string>
+    <string name="feed_editor_input_hint_systematic">Comments</string>
+    <string name="feed_editor_input_max_limit_reached_alert">&lt;Max character limit reached&gt;</string>
+    <string name="feed_editor_input_max_limit_desc">&lt;Max character limit is 300&gt;</string>
+    <string name="sys_feed_desc">Additional comments (Optional)</string>
+    <string name="rating_very_good">Very Good</string>
+    <string name="rating_good">Good</string>
+    <string name="rating_average">Average</string>
+    <string name="rating_poor">Poor</string>
+    <string name="rating_very_poor">Very Poor</string>
+    <string name="feed_success_message_casual">Thank you for your feedback. We will refer your feedback for the future improvement.</string>
+    <string name="feed_success_message_systematic">Thank you for your valuable feedback.</string>
+    <string name="feed_success_message_last">it helps us to improve Rakuten Link</string>
+    <string name="feed_success_message_last_casual">We will refer to your feedback for future improvement.</string>
+    <string name="feed_ratings_desc">How would you rate the quality of the Voice Call?</string>
+    <string name="feed_ratings_desc_video">How would you rate the quality of the Video Call (BETA)?</string>
+    <string name="feed_ratings_desc_chats">How would you rate Link Message?</string>
+    <string name="feed_ratings_desc_voice_mail">How would you rate the quality of the Voice Mail?</string>
+    <string name="feedback_text_count">%1$d</string>
+
+    <!--Chat Compose-->
+    <string name="chat_compose_title">New Message</string>
+
+    <string name="is_typing">%1$s is typing</string>
+    <string name="error_already_added">Already added to the group</string>
+    <string name="error_cannot_start_conversation">Can\'t start conversation</string>
+    <string name="error_cannot_include_local_contact">Can\'t include local contact</string>
+    <string name="error_cannot_add_own_line">Can\'t add own line</string>
+    <string name="error_cannot_create_chat">Can\'t create the message room. Please retry later.</string>
+    <string name="group_info_dialog_admin_permission_revoked">Admin access revoked</string>
+    <string name="group_info_dialog_admin_permission_revoked_failure">Unable to revoke admin access</string>
+    <string name="group_info_dialog_granting_admin_success">Granted Admin access</string>
+    <string name="group_info_dialog_granting_admin_failure">Unable to grant admin access</string>
+    <string name="exit_group">Leave this group</string>
+    <string name="group_info_dialog_leaving_group">Leaving Group</string>
+    <string name="unable_to_leave_the_group">Unable to leave Group</string>
+    <string name="error_cannot_create_group">Can\'t create the group. Please retry later.</string>
+    <string name="error_mandatory_group_subject">Group name is mandatory</string>
+    <string name="error_no_longer_participant">You\'re no longer a participant in this group</string>
+    <string name="error_unable_edit_subject">Unable to change the subject because you aren\'t a participant</string>
+    <string name="error_unable_update_icon">Unable to update the group icon because you aren\'t a participant</string>
+    <string name="error_unable_add_participant">Unable to add the participants because you aren\'t a participant</string>
+    <string name="error_cannot_add_more_than_max">You can\'t add more than 100 participants</string>
+    <string name="error_cannot_share_vcf_more_than_max">Cannot share more than 10 contacts</string>
+    <string name="error_cannot_delete_group_chat">You can\'t delete group message</string>
+    <string name="error_subject_cannot_empty">Subject can\'t be empty</string>
+    <string name="error_name_cannot_empty">Name can\'t be empty</string>
+    <string name="message_search_result_empty">No search result</string>
+
+    <string name="reg_new_user">Register New User</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="enter_msisdn">Enter your MSISDN</string>
+    <string name="msisdn">MSISDN</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="day_ago">day ago</string>
+    <string name="days_ago">days ago</string>
+    <string name="month_ago">A month ago</string>
+    <string name="months_ago">months ago</string>
+    <string name="one_year_ago">One year ago</string>
+    <string name="years_ago">years ago</string>
+    <string name="week_ago">A week ago</string>
+    <string name="weeks_ago">weeks ago</string>
+    <string name="no_message">(no messages yet)</string>
+    <string name="chat_selected">%1$d Message Room Selected</string>
+    <string name="chats_selected">%1$d Message Rooms Selected</string>
+    <string name="selected">Selected</string>
+    <string name="request_otp">Request OTP</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="otp_sent">Sent OTP</string>
+    <string name="long_message_warning_note">This is long message, it will go as file, if you want to continue please click on Yes</string>
+    <string name="otp_verifying">OTP verifying</string>
+    <string name="failed_try_again_text">Failed! Please try again</string>
+    <string name="view_contact_details">View contact</string>
+    <string name="add_contact">Add Contacts</string>
+    <string name="contact_not_available">Contact not available</string>
+    <string name="home_screen_recent_photos">Recent Photos</string>
+    <string name="home_screen_all_photos">View All</string>
+    <string name="voice_mail_txt">Voice Mails</string>
+    <string name="rakuten_games">Rakuten Games</string>
+    <string name="scan_qr_code">Scan QR code</string>
+    <string name="scan_qrcode">Scan QR Code</string>
+    <string name="social_channels">Social Channels</string>
+    <string name="find_services">Find Services</string>
+    <string name="account">Account</string>
+    <string name="txt_more">%1$d More</string>
+    <string name="txt_view_less">View less</string>
+    <string name="moments">Moments</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="my_cloud">My Cloud</string>
+    <string name="connect">INVITE CONTACT</string>
+    <string name="voice_call">Voice call</string>
+    <string name="Groups_in_common">Groups in common</string>
+    <string name="txt_add_contacts">Add Contacts</string>
+    <string name="txt_edit_contacts">Edit Contact</string>
+    <string name="theme">Themes</string>
+    <!--<string name="invite_text">Invite your contact to Rakuten Link and enjoy\n<font color='#ff008c'>free Chats, Voice and Video Calls</font></string>-->
+    <string name="invite_text">Invite friends to Rakuten Link to \nenjoy free messages and video calls</string>
+
+    <string name="menu_chat_forward">Forward</string>
+    <string name="forward_to">Forward to&#8230;</string>
+    <string name="send_to">Send to&#8230;</string>
+    <string name="share_contact_to">Share contact to</string>
+    <string name="no_longer_participant">No longer a participant</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="my_qr_code">My QR Code</string>
+    <string name="qr_scan_instruction">Align the barcode with the square</string>
+    <string name="scan_error">Scan Error</string>
+    <string name="scan_error_description">Unable to scan this code</string>
+    <string name="txt_add_contact">Add Contact</string>
+    <string name="dialog_exit_group_description">Are you sure you want to exit the group?</string>
+    <string name="wired">Headset</string>
+    <string name="earpiece">Default audio</string>
+    <string name="selected_count">%1$s Selected</string>
+
+    <string name="no_news_found">No News Found</string>
+    <string name="news">News</string>
+    <string name="home_news_header">Top Stories</string>
+    <string name="frequent_contact">Frequent Contacts</string>
+
+    <string-array name="news_genre">
+        <item>all</item>
+        <item>poli-soci</item>
+        <item>world</item>
+        <item>busi-econ</item>
+        <item>entertainment</item>
+        <item>sports</item>
+        <item>it</item>
+        <item>life</item>
+        <item>top</item>
+    </string-array>
+    <string-array name="news_category">
+        <item>all</item>
+        <item>poli-soci</item>
+        <item>world</item>
+        <item>busi-econ</item>
+        <item>entertainment</item>
+        <item>sports</item>
+        <item>it</item>
+        <item>life</item>
+        <item>top</item>
+    </string-array>
+
+    <string name="link_invite_text">Join me on Rakuten Link and enjoy free messages &amp; HD video, voice calls.
+        Check out the Rakuten Link app now\n https://play.google.com/apps/testing/jp.co.rakuten.mobile.rcs</string>
+    <string name="save_contact">Save Contact</string>
+    <string name="please_wait">Please wait.</string>
+    <string name="tap_to_call">Tap to return to call</string>
+    <string name="style_rounded" translatable="false">rounded_box</string>
+    <string name="mask_character" translatable="false">\u2022</string>
+    <string name="network_quality">Network Quality:</string>
+    <string name="network_excellent">Excellent</string>
+    <string name="network_average">Average</string>
+    <string name="network_good">Good</string>
+    <string name="network_poor">Poor</string>
+    <string name="network_bad">Bad</string>
+    <string name="need_network_signal_title">Need network signal</string>
+    <string name="need_network_signal_desc">This call cannot be placed without a VoLTE network signal. Please make sure you have a network signal to proceed</string>
+    <string name="sign_in_progress">Sign in progress..</string>
+    <string name="manage">Manage</string>
+    <string name="on_call">On Call</string>
+    <string name="upgrade_req_title">%s is requesting to switch to video call</string>
+    <string name="swap_camera">Swap Camera</string>
+    <string name="add_call">Add Call</string>
+    <string name="participants">Participants</string>
+    <string name="call_participants">Call Participants</string>
+
+    <string name="voice_record_start_description">Tap on mic and start recording</string>
+    <string name="voice_record_stop_description">Tap on mic and stop recording</string>
+    <string name="voice_record_status_recording">Recording&#8230;</string>
+    <string name="voice_record_status_paused">Paused&#8230;</string>
+    <string name="voice_record_status_recorded">Voice Recorded Successfully</string>
+    <string name="voice_record_status_pause">Pause</string>
+    <string name="voice_record_status_resume">Resume</string>
+    <string name="voice_record_play_recording">Play recording</string>
+    <string name="markasread">Mark as read</string>
+    <string name="replytochat">Reply</string>
+    <string name="voice_recorder_discard">Discard &amp; Exit</string>
+    <string name="exit_recording_title">Exit Voice Recording </string>
+    <string name="exit_recording_body">This will discard any recording you have made.</string>
+    <string name="voice_recorder_keep_recording">Keep recording</string>
+
+    <string name="title_tac">Terms &amp; Conditions</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="accept_activation">Accept</string>
+    <string name="decline_activation">Decline</string>
+    <string name="option_voice_call">Voice Call</string>
+    <string name="wait_for_upgrade">Requesting to switch to video call</string>
+    <string name="message">Message</string>
+    <string name="answer">Answer</string>
+    <string name="device_bluetooth">Use bluetooth</string>
+    <string name="device_speaker">Speaker mode</string>
+    <string name="feedback">Feedback</string>
+    <string name="description">Description</string>
+    <string name="hint_desc">Please share your suggestions</string>
+    <string name="hint_desc_issue">Please describe issue&#8230;</string>
+    <string name="submit_feedback">Submit Feedback</string>
+    <string name="not_now">Not now</string>
+    <string name="submit_feedback_failed">Failed to submit Feedback</string>
+    <string name="rb_issues_others">Others</string>
+    <string name="rb_issues_games">Games</string>
+    <string name="rb_issues_contacts">Contacts</string>
+    <string name="rb_issues_chat">Message</string>
+    <string name="rb_issues_call">Call</string>
+    <string name="issues">Issues</string>
+    <string name="suggestions">Suggestions</string>
+    <string name="desc_count">%1$s/150</string>
+    <string name="issues_type">Please select your issues type</string>
+    <string name="issues_sub">Issues in -</string>
+    <string name="send_email">Send email&#8230;</string>
+    <string name="submit_feedback_success">Feedback submitted successfully</string>
+    <string name="submit_feedback_sent">Feedback sent</string>
+    <string name="my_rakuten_mobile">my Rakuten Mobile</string>
+    <string name="respond_message">Respond with message</string>
+    <string name="respond_sorry_message">Sorry! I can’t talk right now.</string>
+    <string name="respond_call_later">I will call you later</string>
+    <string name="respond_on_way">I am on the way</string>
+    <string name="respond_custom_message">Custom message</string>
+
+    <string name="call_ongoing_desktop_title">Failed to initiate call</string>
+    <string name="call_ongoing_desktop_message">This call cannot be initiated as there is an ongoing call already.</string>
+
+    <string name="call_permission">To make or continue call, LINK need permissions</string>
+
+    <string-array name="emergency_number">
+        <item>110</item>
+        <item>118</item>
+        <item>119</item>
+        <item>104</item>
+        <item>111</item>
+        <item>115</item>
+        <item>117</item>
+        <item>171</item>
+        <item>188</item>
+        <item>189</item>
+        <item>#8000</item>
+        <item>#8011</item>
+        <item>#8103</item>
+        <item>#8139</item>
+        <item>#8162</item>
+        <item>#9110</item>
+        <item>#9910</item>
+        <item>#7119</item>
+        <item>0120</item>
+        <item>0800</item>
+        <item>1417</item>
+    </string-array>
+
+
+    <string name="edit_profile_name">Profile Name</string>
+    <string name="profile_name_info_dialog_edit">Changing the Profile name</string>
+    <string name="updating_profile_name_success">Updating Profile name success</string>
+    <string name="updating_profile_name_failure">Updating Profile name failed</string>
+    <string name="hint_profile_name">Profile Name</string>
+    <string name="incoming_audio_call_text">Incoming call…</string>
+    <string name="incoming_video_call_text">Incoming video call…</string>
+    <string name="text_beta">BETA</string>
+    <string name="network_not_available_for_call">Failed to initiate the call. Please check your network connection and try again.</string>
+    <string name="unknown">Unknown</string>
+
+    <string name="new_link_user_notification_id" translatable="false">new_link_user_notification</string>
+    <string name="text_joined_link">Joined Rakuten Link</string>
+    <string name="contact_saved">Contact Saved successfully</string>
+    <string name="contact_not_saved">Contact not saved</string>
+    <string name="msg_location_recieved">Location Received</string>
+    <string name="delete_multiSelection_group_msg">Please make another participant as admin for %s</string>
+    <string name="recent_text">Recent</string>
+    <string name="select_contact">Select Contact</string>
+    <string name="share_contact">Share Contact</string>
+    <string name="ft_attachment_count">%1$d ATTACHED</string>
+    <string name="max_char_count_enter_name" translatable="false">25</string>
+
+    <string name="share_image">Share Image</string>
+    <string name="enter_name">Rakuten Link name</string>
+    <string name="please_enter_name">Please Enter Your Name</string>
+    <string name="edit_name">Edit Name</string>
+    <string name="edit_name_length" translatable="false">%1$d/20</string>
+
+    <string name="install_ecare">Install my Rakuten Mobile</string>
+    <string name="open">OPEN</string>
+    <string name="send">Send</string>
+    <string name="send_document_to">Send selected documents to %1$s ?</string>
+    <string name="cannot_send_document_file_format_corrupted">Can\'t send selected document to %1$s\nCorrupted File Format</string>
+    <string name="cannot_send_multi_document_file_format_corrupted">Can\'t send %1$d documents - Corrupted File Format\nSend remaining documents to %2$s ?</string>
+    <string name="cannot_send_all_document_file_format_corrupted">Can\'t send selected documents to %1$s - Corrupted File Format</string>
+    <string name="file_format_not_supported">Invalid File format</string>
+    <string name="send_to_user">Send to %1$s</string>
+    <string name="change_native_app">Please reset default dialer app before logout.</string>
+
+    <string name="saving_detail">SAVING</string>
+    <string name="enter_ph_no">Enter phone number</string>
+    <string name="or">or</string>
+    <string name="getting_contact_info">Getting Contact Info</string>
+    <string name="location_data">Location Data</string>
+    <string name="invite_contacts">Invite Contact</string>
+    <string name="selected_one_chat_title">Delete Message room</string>
+    <string name="selected_multi_chat_title">Delete message rooms</string>
+    <string name="selected_one_chat_msg">Are you sure you want to delete selected message room? You will lose all shared contents</string>
+    <string name="selected_multi_chat_msg">Are you sure you want to delete selected message room(s)? You will lose all shared contents</string>
+    <string name="microphone_permission">To Record a Voice Message allow Link to access your microphone.</string>
+    <string name="location_turn_off">Do you want to turn off the Link location access?</string>
+    <string name="location_access_permission">Allow Link app to access your current location.</string>
+
+    <string-array name="number_type">
+        <item>Mobile</item>
+        <item>Home</item>
+        <item>Work</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="email_type">
+        <item>Home</item>
+        <item>Work</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="address_type">
+        <item>Home</item>
+        <item>Work</item>
+        <item>Other</item>
+    </string-array>
+    <string name="full_name">Full Name</string>
+    <string name="phonetic_name">Phonetic Name</string>
+    <string name="start_chat">Send Message</string>
+    <string name="save_to_contacts">Save to Contacts</string>
+    <string name="not_found_contacts">Not found in contacts</string>
+    <string name="external_storage_permission">To share media allow link to access photo,media and files.</string>
+    <string name="permission_storage_media_download">To download media, allow Link access to your device\'s photos, media and files. Tap Settings > Permissions, and turn Storage on.</string>
+    <string name="permission_storage_media_view">To view media, allow Link access to your device\'s photos, media and files. Tap Settings > Permissions, and turn Storage on.</string>
+    <string name="permission_camera">Allow access to take pictures and record videos from the device settings</string>
+    <string name="permission_scan_qr">To scan QR code, allow Link to access your camera</string>
+    <string name="permission_storage">Allow access to photos, media and files on your device from the device settings</string>
+    <string name="permission_location">Allow access to this device\'s location from the device settings</string>
+    <string name="permission_contacts">Allow access to contacts on your device from the device settings</string>
+    <string name="permission_call">Allow access to make and manage phone calls from the device settings</string>
+    <string name="permission_record_audio">Allow access to record audio from the device settings</string>
+    <string name="permission_system_overlay">To show call bubble over other apps, please allow permission from device settings</string>
+    <string name="permission_label_camera">take pictures and record videos</string>
+    <string name="permission_label_storage">photos, media and files on your device</string>
+    <string name="permission_label_location">this device\’s location</string>
+    <string name="permission_label_contact">contacts on your device</string>
+    <string name="permission_label_microphone">record audio</string>
+    <string name="permission_label_call">make and manage phone calls</string>
+    <string name="permission_with_one_label">Allow access to %s from the device settings.</string>
+    <string name="permission_with_two_labels">Allow access to %s and %s from the device settings.</string>
+    <string name="permission_with_three_labels">Allow access to %s, %s and %s from the device settings.</string>
+    <string name="permission_rationale_label_camera">camera</string>
+    <string name="permission_rationale_label_storage">storage</string>
+    <string name="permission_rationale_label_location">location</string>
+    <string name="permission_rationale_label_contact">contacts</string>
+    <string name="permission_rationale_label_microphone">microphone</string>
+    <string name="permission_rationale_label_phone">telephone</string>
+    <string name="permission_rationale_call">To call</string>
+    <string name="permission_rationale_video_call">To video call</string>
+    <string name="permission_rationale_capture_photo">To capture photos</string>
+    <string name="permission_rationale_record_voice_message">To record a Voice Message</string>
+    <string name="permission_rationale_send_voice_message">To send a voice message</string>
+    <string name="permission_rationale_contact">To edit contacts</string>
+    <string name="permission_rationale_storage">To access stored media</string>
+    <string name="permission_rationale_send_photos_videos">To send photos or videos</string>
+    <string name="permission_rationale_share_vcard">To share contacts</string>
+    <string name="permission_rationale_take_photo_video">To take a photo or a video</string>
+    <string name="permission_rationale_set_photo_group_chat">To set a photo for group message</string>
+    <string name="permission_rationale_share_location">To share location</string>
+    <string name="permission_rationale_record_video">To record video</string>
+    <string name="permission_rationale_scan_qr_code">To scan QR Code</string>
+    <string name="permission_rationale_with_one_label">%s, allow Link to access your %s</string>
+    <string name="permission_rationale_with_two_labels">%s, allow Link to access your %s and %s</string>
+    <string name="permission_rationale_with_three_labels">%s, allow Link to access your %s, %s and %s</string>
+    <string name="permission_rationale_msisdn_validation">To continue with login</string>
+    <string name="permission_rationale_label_phone_number">phone</string>
+
+    <string name="permission_rationale_camera">camera</string>
+    <string name="permission_rationale_photo_video">storage</string>
+    <string name="permission_rationale_location_information">location</string>
+    <string name="permission_rationale_send_file">To access stored media</string>
+    <string name="permission_rationale_take_send_photo_video">To take a photo or a video</string>
+    <string name="permission_rationale_send_location">To share location</string>
+
+    <string name="selected_message_title">Delete selected message(s)</string>
+    <string name="selected_message_description">Are you sure you want to delete selected message(s)?</string>
+    <string name="message_txt">message</string>
+    <string name="messages_txt">messages</string>
+    <string name="activity_not_supported">Can\'t open this file type.</string>
+    <string name="application_not_present">No application is installed to handle this file type.</string>
+
+    <string name="settings_video_quality_title" translatable="false">Video size %s</string>
+    <string name="settings_photo_quality_title" translatable="false">Photo size</string>
+
+    <!-- Preview Activity -->
+    <string name="preview_controls_confirm">Save</string>
+    <string name="preview_controls_retake">Repeat</string>
+    <string name="preview_controls_cancel">Cancel</string>
+    <string name="preview_controls_crop">Crop</string>
+    <string name="preview">preview</string>
+    <string name="videos">Videos</string>
+    <string name="photos">Photos</string>
+    <string name="valid_number">Please enter valid number</string>
+    <string name="share_loc_with">Share with %1$s</string>
+    <string name="share_location">Share Location</string>
+
+    <string name="notification_summary_title">%1$d messages from %2$d message rooms</string>
+    <string name="non_rcs_text_input_max_length">Text must not exceed %1$d characters</string>
+    <string name="logout_confirm">Are you sure you want to logout?</string>
+    <string name="logout_info">Please logout before uninstall, otherwise you may not receive calls and SMSs on your phone.</string>
+    <string name="error_cannot_share_files_more_than_max">Cannot send more than 10 files.</string>
+    <string name="error_cannot_share_images_more_than_max">Cannot send more than 10 Images.</string>
+    <string name="error_cannot_share_video_more_than_max">Cannot send more than 5 Videos.</string>
+
+    <string name="profile_photo">Profile Photo</string>
+
+    <string name="location_continue">Continue</string>
+    <string name="mute_notification">Mute</string>
+    <string name="mute_notification_group_info">Mute notifications</string>
+
+    <string name="add_to_contact">This number is not in your contact list.</string>
+    <string name="select_number">Select Number</string>
+    <string name="select">SELECT</string>
+    <string name="number_conflict">Number conflict</string>
+    <string name="number_conflict_description">Number %1$s is already present in some other contact.</string>
+
+    <string name="got_it">Got it</string>
+    <string name="on_board_title">Attention</string>
+    <string name="on_board__message">If you would like to discontinue using Rakuten Link, please logout before you uninstall the application. \n\nIf you uninstalled app without logout, you may not receive calls and SMSs on your phone.</string>
+    <string name="select_all">Select All</string>
+
+    <string name="profile_empty_toast">Profile name can\'t be empty.</string>
+
+    <string name="sending_messages">Sending messages&#8230;</string>
+    <string name="edit_message">Edit message</string>
+    <string name="edited">Edited</string>
+    <string name="message_delete_self">DELETE FOR MYSELF</string>
+    <string name="message_delete_everyone">DELETE FOR EVERYONE</string>
+    <string name="message_deleted_mo">You deleted this message</string>
+    <string name="message_deleted_mt">This message was deleted</string>
+    <string name="message_deleted">Message deleted</string>
+
+    <string name="draft_indicator">[Draft] : %1$s</string>
+
+    <!--More screen-->
+    <string name="sim_change_detection">You have been logged out because a new SIM card was detected. Rakuten Link can only be used with a Rakuten Mobile SIM card. Please try again after inserting your SIM card.</string>
+    <string name="location_data_information_off">when turning off, functions which are related location are disabled.</string>
+    <string name="location_data_information_on">You cannot use services that require your device\'s location if this setting is disabled</string>
+    <string name="informaton_sharing_off">Allow sharing of usage data to help improve services and provide more relevant targeting of advertising.</string>
+    <string name="informaton_sharing_on">Allow sharing of usage data to help improve services and provide more relevant targeting of advertising.</string>
+    <string name="learn_more"><b><u>Learn More</u></b></string>
+    <string name="privacy_setting">Privacy Settings</string>
+    <string name="app_settings">Settings</string>
+    <string name="secrecy_of_communications">Usage Data</string>
+    <string name="link_info_access_turn_on">Do you want to turn on Link Usage Data?</string>
+    <string name="link_info_access_turn_off">Do you want to turn off Link Usage Data?</string>
+    <string name="location_permission_turn_off">Do you want to turn off Link location access?\nAppInfo >Permission >Location >Turn off the button</string>
+    <string name="secrecy_header" translatable="false"><b><u>快適なサービスをご利用いただくための情報提供について</u></b></string>
+    <string name="no_connection_error">No Internet connection, please try later</string>
+    <string name="more_details">More Details</string>
+    <string name="otp_auth_failed">We are unable to authenticate you at this time. Please try again later. If the issue persists please press More Details below.</string>
+    <string name="login_invalid_number">We are unable to authenticate your phone number as it is not mapped to your Rakuten ID. Please input correct Rakuten Mobile phone number.</string>
+    <string name="max_otp_retries_count_reached">We are unable to authenticate you now as multiple attempts were tried to login with this number earlier. Please try again after some time</string>
+   <string name="max_otp_retries_count_reached_time">We are unable to authenticate you now as multiple attempts were tried to login with this number earlier. Please try again after %s</string>
+    <string name="send_otp_suggestion">Send OTP by SMS</string>
+    <string name="send_otp_next_btn">NEXT</string>
+    <string name="open_rakuten_mobile">Open my Rakuten Mobile</string>
+    <string name="voice_permission_title">Access to Microphone</string>
+    <string name="voice_permission_description">Access to your device\'s microphone is required to allow you to make phone calls and send voice messages. Please click \"Allow\" when prompted to provide access.
+        \n\n  *Your conversation will not be recorded</string>
+    <string name="enable_microphone_permission">Access to your device\'s microphone is required to allow you to make phone calls and send voice messages.</string>
+    <string name="saving">Saving.</string>
+    <string name="contact_name_limit_prompt">Can’t enter any more characters</string>
+    <string name="desktop_client_login_continue">You have already logged in on another desktop device, do you want to login on this device instead? You will be logged out from the other device automatically. </string>
+    <string name="desktop_login_success">Login successful</string>
+    <string name="desktop_login_cancel">Login cancelled</string>
+    <string name="desktop_login_failed">Login failed</string>
+    <string name="phone_permission_title">Access to Phone</string>
+    <string name="phone_permission_description">Access to Phone permission is required to make Link phone calls</string>
+    <string name="camera_permission_title">Access to Camera</string>
+    <string name="camera_permission_description">Access to Camera permission is required to make Link video calls</string>
+
+    <!--Voicemail-->
+    <string name="voicemail_title">Voicemail</string>
+    <string name="voicemail_empty_title">No Voicemails</string>
+
+    <!--Voicemail Settings-->
+    <string name="voicemail_settings_title">Voicemail Settings</string>
+    <string name="voicemail_settings_greeting_type">Greeting type</string>
+    <string name="voicemail_settings_system_greeting">System greeting</string>
+    <string name="voicemail_settings_personal_greeting">Personal greeting</string>
+    <string name="voicemail_settings_edit_greeting">Edit</string>
+    <string name="voicemail_settings_more">More Settings</string>
+    <string name="voicemail_settings_ecare">Proceed to my Rakuten Mobile</string>
+
+    <!--Setup Voicemail-->
+    <string name="setup_voicemail_title">Setup Voicemail</string>
+    <!--Record greeting-->
+    <string name="record_greeting_tap_to_record">Tap to record your personal greeting message</string>
+    <string name="record_greeting_record_personal">Record Personal Greeting</string>
+    <string name="record_greeting_saving">Saving personal greeting</string>
+    <string name="record_greeting_saving_succes">Personal greeting saved</string>
+    <string name="record_greeting_saving_failure">Error enabling custom greeting</string>
+
+    <string name="saving_personal_greeting">Saving personal greeting</string>
+    <!-- Start: ChatBot Related Strings -->
+    <string name="cb_rakuten_ecare">お客様サポート</string>
+    <string name="cb_icon_content_description">Customer Support Logo</string>
+    <string name="cb_edit_text_hint">Type a message</string>
+    <string name="cb_listening">Listening</string>
+    <string name="cb_processing">Processing</string>
+    <string name="cb_ping_label">PING</string>
+    <string name="cb_download_label">DOWNLOAD</string>
+    <string name="cb_upload_label">UPLOAD</string>
+    <string name="cb_ms">Ms</string>
+    <string name="cb_mbps">Mbps</string>
+    <string name="cb_st_locating_server">Locating the closest server</string>
+    <string name="cb_st_summary_good_nw">You are on a good network</string>
+    <string name="cb_st_summary_average_nw">You are on a average network</string>
+    <string name="cb_st_summary_poor_nw">You are on a poor network</string>
+    <string name="cb_st_common_failure_msg">Failed to complete test.</string>
+    <string name="cb_try_again">TRY AGAIN</string>
+    <string name="cb_common_permission_denied">Permission denied</string>
+    <string name="otp_cookie_failed">Session expired. Please input the new OTP manually</string>
+
+    <string name="cb_grpc_unknown">Server is unavailable. Please try it again later.</string>
+    <string name="cb_grpc_unimplemented">Please update the app and retry.</string>
+    <string name="cb_grpc_internal_error">Restarting conversation due to unexpected error.</string>
+    <string name="cb_grpc_other_errors">Unexpected error occurred. Please try it again later.</string>
+    <string name="cb_powered_by" translatable="false">Powered by</string>
+
+    <!-- do not modify since state of speed test values are triggered by below description -->
+    <string name="cb_st_cd_idle" translatable="false">idle</string>
+    <string name="cb_st_cd_progress" translatable="false">progressing</string>
+    <string name="cb_st_cd_completed" translatable="false">completed</string>
+    <string name="delete_everyOne_failed">Request failed</string>
+
+    <string name="cb_deeplink_myrakuten_mobile">my Rakuten Mobile</string>
+    <string name="cb_deeplink_faq">FAQ</string>
+
+    <string name="fab_menu_new_message">New message</string>
+    <string name="fab_menu_create_group">Create group</string>
+    <string name="fab_menu_ecare">Customer support</string>
+    <string name="fab_menu_tutorial_title">Get access to <b>customer support</b> by tapping the icon at the bottom right</string>
+    <string name="fab_menu_tutorial_tap_to_close">Tap to close</string>
+    <!-- End: ChatBot Related Strings -->
+
+    <!--Voice Mail Greeting New UI Strings-->
+    <string name="setup_voice_mail">Setup Voicemail</string>
+    <string name="setup_voicemail_continue">Continue</string>
+    <string name="record_try_again">TRY AGAIN</string>
+    <string name="custom_greeting_enabled">Custom greeting enabled</string>
+    <string name="system_greeting_enabled">System greeting enabled</string>
+    <string name="error_enabling_custom_greeting">Error enabling custom greeting</string>
+    <string name="use_default_system_greeting">Use default system greetings</string>
+    <string name="setup_personal_greeting">Setup personal greetings</string>
+    <string name="tap_to_record_greeting">Tap to record your personal greeting message</string>
+    <string name="tap_to_finish_recording">Tap to finish recording</string>
+    <string name="record_personal_greeting">Record Personal Greeting</string>
+    <string name="recording">Recording...</string>
+    <string name="complete">Complete</string>
+    <string name="complete_onboarding_screen">Complete</string>
+
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+
+    <string name="new_message_received">New message received</string>
+    <string name="talk_chat_msg_sent_you">Sent you a message</string>
+    <string name="talk_chat_reply">Reply</string>
+    <string name="talk_notification_open">OPEN</string>
+    <string name="calls_title">Calls</string>
+    <string name="calls_history_title">Calls</string>
+    <string name="no_call_history">No call history</string>
+    <string name="call_history">Recent calls</string>
+    <string name="view_all">View all</string>
+    <string name="view_all_from_list">View all</string>
+    <string name="no_contacts_title">No contacts</string>
+    <string name="no_contacts_detail">Add contacts to get in touch with your friends!</string>
+    <string name="chat_emptyText_error_msg">You cannot send empty message</string>
+    <string name="talk_chat_msgInfo_title">Message info</string>
+    <string name="clear_chat_message_error">Few messages are in sending state,Please try later</string>
+
+    <!-- Image crop library -->
+    <string name="ucrop_label_edit_photo" tools:override="true">Edit Photo</string>
+    <string name="ucrop_menu_crop" tools:override="true">Crop</string>
+    <string name="ucrop_scale" tools:override="true">Scale</string>
+    <string name="ucrop_rotate" tools:override="true">Rotate</string>
+
+    <string name="profile_visibility_title">Select Rakuten Link name and photo visibility</string>
+    <string name="profile_visible_to_contact">Visible to saved contacts only</string>
+    <string name="profile_visible_to_all">Visible to all Rakuten Link users</string>
+    <string name="profile_visible_change_setting">※You can change this setting anytime from the Settings page</string>
+    <string name="add_mail">Add Mail</string>
+    <string name="add_address">Add Address</string>
+    <string name="birthday">Birthday</string>
+    <string name="copied_message">Copied</string>
+
+    <!-- Customize incoming Ringtone -->
+    <string name="ringtone_setting_title">Ringtone</string>
+    <string name="ringtone_txt">Ringtone</string>
+    <string name="select_link_sound">Rakuten Link ringtone</string>
+    <string name="device_sound">Device ringtone</string>
+    <string name="select_device_sound">Select device ringtone</string>
+    <string name="silent_ringtone">Silent</string>
+    <string name="msisdn_network_alert">. Please make sure you are connected to Rakuten or partner Mobile network using a<a href="https://network.mobile.rakuten.co.jp/product/certified-products/"> recommended Rakuten Mobile device</a></string>
+    <string name="msisdn_network_alert_link" translatable="false">https://network.mobile.rakuten.co.jp/product/certified-products/</string>
+    <string name="link_default_ringtone_name" translatable="false">Rakuten Link</string>
+
+
+    <!-- Customize Notification Ringtone -->
+    <string name="msg_tone_setting_title">Messaging tone</string>
+    <string name="msg_tone_sub_header_title">Messaging tone</string>
+    <string name="msg_select_link_tone">Rakuten Link messaging tone</string>
+    <string name="msg_device_tone">Device messaging tone</string>
+    <string name="msg_select_device_tone">Select device messaging tone</string>
+
+
+    <string name="contact_not_saved_in_device_list">This contact is not saved in device contact list</string>
+    <string name="contact_not_saved_in_link_list">This contact is not saved in Link contact list</string>
+    <string name="unsaved">Unsaved</string>
+    <string name="call_fallback_native_hyperlink">Call will be placed from native phone app. Charges may apply based on the phone number. More details</string>
+    <string name="call_fallback_native_hyperlink_label">More details</string>
+    <string name="call_fallback_native_hyperlink_url" translatable="false">https://network.mobile.rakuten.co.jp/faq/detail/00001873/</string>
+    <string name="network_error">Network Error</string>
+    <string name="login_error_message">Please resend OTP and verify again</string>
+    <string name="resend">RESEND</string>
+    <string name="invalid_otp_message">You’ve entered incorrect OTP</string>
+    <string name="otp_timer">OTP can be resent after %d secs.</string>
+    <string name="otp_expiry_message">OTP is expired, please resend</string>
+    <string name="change_system_settings">Allow this app to change system settings.</string>
+
+    <string name="notification_group_chat_create_title">%1$s invited you to \"%2$s\" group</string>
+    <string name="dialing_indication_incoming_call">Incoming Call</string>
+    <string name="date_format">MM/dd/yyyy</string>
+
+    <string name="tab_conversation">Conversation</string>
+    <string name="tab_message">Message</string>
+    <string name="tab_contact">Contact</string>
+
+    <string name="no_search_result">No search result</string>
+    <string name="changes_saved_reluanch_app" translatable="false">Changes are Saved. Please relaunch your application</string>
+    <string name="error_occur_try_later" translatable="false">Some error occurred. Please try after sometime</string>
+    <string name="changes_reset_reluanch_app" translatable="false">Changes are Reset. Please relaunch your application</string>
+    <string name="permission_not_granted_by_user" translatable="false">Permissions not granted by the user</string>
+    <string name="conversation_header">Conversations</string>
+    <string name="share_error_ft_non_rcs">This item can\'t be sent to non-Link user</string>
+
+    <string name="handleimage">handleImage</string>
+    <string name="view">view</string>
+
+    <string name="mute_conv_failed">Could not mute, please try again later</string>
+    <string name="unmute_conv_failed">Could not unmute, please try again later</string>
+
+</resources>
