@@ -69,5 +69,5 @@ dependencies {
     //rakuten
     //implementation("jp.co.rakuten.sdtd:user:5.1.0")
 
-
+    implementation 'com.rakuten.mobile.rcs:rcs-sdk:2.7.0-SNAPSHOT'
 }

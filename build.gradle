@@ -11,12 +11,21 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
-
+def user = System.getenv('GH_INSTALL_USER')
+def token = System.getenv('GH_INSTALL_TOKEN')
 allprojects {
     repositories {
         google()
         mavenCentral()
         maven { url 'https://maven.google.com' }
+        maven {
+            name 'github'
+            credentials {
+                username user
+                password token
+            }
+            it.url 'https://maven.pkg.github.com/Rakuten-MTSD-PAIS/android-sdk-snapshot'
+        }
         jcenter() // Warning: this repository is going to shut down soon
     }
 }
